@@ -5,7 +5,7 @@ public:
     
     int find(int i){
         if(parent[i] != i){
-            return find(parent[i]);
+            parent[i] = find(parent[i]);
         }
         return parent[i];
     }
